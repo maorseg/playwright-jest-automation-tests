@@ -14,13 +14,6 @@ pipeline {
             }
         }
 
-        stage('Install the browsers') {
-            steps {
-                bat 'npx playwright install
-'
-            }
-        }
-
         stage('Run API Server') {
             steps {
                 bat 'start /B npm run api'
