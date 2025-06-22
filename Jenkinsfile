@@ -14,6 +14,12 @@ pipeline {
             }
         }
 
+        stage('Install Playwright Browsers') {
+            steps {
+            bat 'env PLAYWRIGHT_BROWSERS_PATH=0 npx playwright install'
+      }
+    }
+
         stage('Run API Server') {
             steps {
                 bat 'start /B npm run api'
