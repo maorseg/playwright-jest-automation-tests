@@ -8,6 +8,19 @@ pipeline {
             }
         }
 
+        stage('Install Playwright Dependencies') {
+            steps {
+                bat 'npm install -D @playwright/test'
+            }
+        }
+
+        stage('Install the browsers') {
+            steps {
+                bat 'npx playwright install
+'
+            }
+        }
+
         stage('Run API Server') {
             steps {
                 bat 'start /B npm run api'
