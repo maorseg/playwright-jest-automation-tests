@@ -8,6 +8,12 @@ pipeline {
             }
         }
 
+        stage('Install Playwright Browsers') {
+            steps {
+                bat 'npx playwright install'
+             }
+        }
+
         stage('Install Playwright Dependencies') {
             steps {
                 bat 'npm install -D @playwright/test'
