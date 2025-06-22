@@ -13,10 +13,10 @@ describe('GET /api', () => {
     const response: AxiosResponse<ProductListResponse> = await axios.get(TestConfig.api.productsList);
 
     // Validate HTTP status and custom responseCode
-    console.log(response.data)
     expect(response.status).toBe(200);
     expect(response.data).toHaveProperty('responseCode', 200);
     expect(response.data).toHaveProperty('products');
+    // console.log(response.data)
   });
 
   it('should return responseCode 200 for brandsList', async () => {
@@ -26,7 +26,7 @@ describe('GET /api', () => {
     expect(response.status).toBe(200);
     expect(response.data).toHaveProperty('brands');
     expect(response.data).toHaveProperty('responseCode', 200);
-    console.log(response.data)
+    // console.log(response.data)
   });
   
 });
