@@ -1,64 +1,68 @@
-# Playwright-Jest-Automation-Tests
+📸 Playwright-Jest Automation Tests
 
-Automated testing framework for UI and API validations on the demo site [Automation Exercise](https://www.automationexercise.com), built using **Playwright**, **Jest**, and **Axios**, with CI/CD integration via **Jenkins** and detailed HTML reporting.
+End-to-end testing framework for both UI and API validations on Automation Exercise, powered by Playwright, Jest, and Axios. Integrated with Jenkins and GitHub Actions for CI/CD and enriched with detailed HTML reporting for clear test insights.
 
----
+🚀 Overview
 
-## 🚀 Project Overview
+This project is aimed at automating tests for automationexercise.com and includes:
+- Playwright for fast, cross-browser UI automation.
+- Jest as the test runner with expressive assertion capabilities.
+- Axios for validating RESTful API endpoints.
+- CI/CD integration via Jenkins and GitHub Actions.
+- nHTML Reports for intuitive, readable test results.
 
-This project is designed to provide end-to-end testing coverage for `automationexercise.com`. It leverages:
-- **Playwright** for robust and efficient UI automation across multiple browsers.
-- **Jest** as the test runner and assertion library.
-- **Axios** for REST API validations.
-- **Jenkins** for orchestrating continuous integration and delivery.
-- **HTML Reporter** for clean and accessible test reports.
-
----
-
-## 🏗️ Project Structure
-
-```bash
+🧱 Project Structure
 .
-├── .github/workflows        # GitHub actions config (if applicable)
+├── .github/workflows/       # GitHub Actions configuration
 ├── tests/
-│   ├── ui/                  # Playwright UI test cases
-│   ├── api/                 # Axios API test cases
-│   └── utils/               # Helper functions, fixtures, config
-├── reports/                 # Generated HTML reports
-├── jenkins/                 # Jenkins pipeline scripts or files
-├── playwright.config.ts     # Playwright configuration
-├── jest.config.js           # Jest configuration
+│   ├── ui/                  # UI test cases (Playwright)
+│   ├── api/                 # API test cases (Axios)
+│   └── utils/               # Shared utilities, fixtures, configs
+├── reports/                 # HTML test reports
+├── jenkins/                 # Jenkins pipelines/scripts
+├── playwright.config.ts     # Playwright setup
+├── jest.config.js           # Jest setup
 ├── package.json
 └── README.md
 
-🔧 Getting Started
-Prerequisites
-Ensure the following tools are installed:
+🛠️ Prerequisites
 
-Node.js (v16 or higher)
+Make sure the following tools are installed:
+- Node.js (v16+)
+- npm or Yarn
+- Git
+- Jenkins (optional, for CI)
 
-npm or yarn
+📦 Installation
 
-Jenkins (for CI setup)
+- git clone https://github.com/maorseg/playwright-jest-automation-tests.git
+- cd playwright-jest-automation-tests
+- npm install
 
-Git
+🧪 Running Tests in the terminal
 
-Installation
+UI Tests (Playwright):
+npm run e2e
 
-git clone https://github.com/maorseg/playwright-jest-automation-tests.git
-cd playwright-jest-automation-tests
-npm install
+API Tests (Jest + Axios):
+npm run e2e
 
-Running Tests
-UI Tests (Playwright)
-npx playwright test
+📊 HTML Reports
 
-API Tests (Jest + Axios)
-npm run test:api
+After test execution, reports are saved in the /reports directory. Open them in your browser to explore detailed test results, logs, and screenshots.
 
-HTML Reports
-Test results are automatically output to the /reports directory. Open the HTML files in any browser to view detailed logs and results.
+⚙️ CI/CD Integration
 
-HTML Reports
-Test results are automatically output to the /reports directory. Open the HTML files in any browser to view detailed logs and results.
+This project is equipped for Continuous Integration and Continuous Deployment using GitHub Actions and optionally Jenkins.
 
+GitHub Actions: Automates the testing pipeline on each push or pull request. Located under .github/workflows/, the workflow installs dependencies, runs tests, and stores artifacts such as HTML reports for easy access.
+
+Jenkins: For teams using Jenkins, declarative pipelines are defined under jenkins/, allowing integration with your build server for scheduled or event-driven test execution.
+
+Jenkins CI/CD
+ 
+ - Refer to Jenkinsfile
+
+Github Actions CI/CD
+ 
+ - Refer to ci.yml
