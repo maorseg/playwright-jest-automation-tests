@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "api": "jest && start ./test-report.html",
+    "api": "jest",
+    "apiwithReports": "jest && start ./test-report.html",
     "e2e": "npx playwright test tests/ui",
     "lint": "eslint tests/**/*.ts",
     "format": "prettier --write ."
