@@ -1,11 +1,16 @@
 export const TestConfig = {
+  login: {
+    successfulLogin: "Logged in",
+     Signup: " Signup / Login"
+  },
   homepage: {
     title: "Automation Exercise",
     productsList:"https://automationexercise.com/api/productsList"
   },
-  login: {
-    successfulLogin: "Logged in",
-     Signup: " Signup / Login"
+   products: {
+    WomenDressProducts: "Women - Dress Products",
+    WomenTopsProducts: "Women - Tops Products",
+    WomenSareeProducts: "Women - Saree Products"
   },
   api: {
     productsList:"https://automationexercise.com/api/productsList",
