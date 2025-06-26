@@ -10,7 +10,11 @@ export const TestConfig = {
    products: {
     WomenDressProducts: "Women - Dress Products",
     WomenTopsProducts: "Women - Tops Products",
-    WomenSareeProducts: "Women - Saree Products"
+    WomenSareeProducts: "Women - Saree Products",
+    MenTshirtsProducts: "Men - Tshirts Products",
+    MenJeansProducts: "Men - Jeans Products",
+    kidsDressProducts: "Kids - Dress Products",
+    KidsTopsShirtsProducts: "Kids - Tops & Shirts Products"
   },
   api: {
     productsList:"https://automationexercise.com/api/productsList",
