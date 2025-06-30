@@ -1,9 +1,9 @@
-import { test, expect } from '@playwright/test';
+import { test } from './setup';
+import { expect } from '@playwright/test';
 import { credentials } from '../../utils/envHelper';
 import { TestConfig } from '../../test.config';
 
 test('Successful Login and Logout', async ({ page }) => {
-    await page.goto('/');
     await page.getByRole('link', { name: 'Signup / Login' }).click();
     await page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address').fill(credentials.email);
     await page.getByRole('textbox', { name: 'Password' }).fill(credentials.password);

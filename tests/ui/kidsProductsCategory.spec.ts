@@ -1,8 +1,8 @@
-import { test, expect } from '@playwright/test';
+import { test } from './setup';
+import { expect } from '@playwright/test';
 import { TestConfig } from '../../test.config';
 
 test('Kids - Dress Products exist', async ({ page }) => {
-  await page.goto('/');
   await page.getByRole('link', { name: 'Products' }).click();
   await page.locator('a[href="#Kids"]').click();
   await page.getByRole('link', { name: 'Dress' }).click();
@@ -10,7 +10,6 @@ test('Kids - Dress Products exist', async ({ page }) => {
 });
 
 test('Kids - Tops & Shirts Products exist', async ({ page }) => {
-  await page.goto('/');
   await page.getByRole('link', { name: 'Products' }).click();
   await page.locator('a[href="#Kids"]').click();
   await page.getByRole('link', { name: 'TOPS & SHIRTS' }).click();
