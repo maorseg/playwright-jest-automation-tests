@@ -16,6 +16,13 @@ export const TestConfig = {
     kidsDressProducts: "Kids - Dress Products",
     KidsTopsShirtsProducts: "Kids - Tops & Shirts Products"
   },
+  contactUs: {
+    name: "testUser",
+    email: "automationexercisetest@gmail.com",
+    subject: "testSubject",
+    message: "testMessage",
+    feedbackSubmitted:"Success! Your details have been submitted successfully."
+  },
   api: {
     productsList:"https://automationexercise.com/api/productsList",
     brandsList:"https://automationexercise.com/api/brandsList"
