@@ -9,7 +9,7 @@ module.exports = defineConfig({
   use: {
     baseURL: 'https://www.automationexercise.com', // Your tested URL here
     browserName: 'chromium',
-    headless: false, // Run tests in headed mode (optional),
+    headless: true, // Run tests in headed mode (optional),
     //launchOptions: {
      // slowMo: 1000, // time in milliseconds between actions (e.g. 1000ms = 1s) for debugging
      
