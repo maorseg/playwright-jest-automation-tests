@@ -3,6 +3,7 @@ import { expect } from '@playwright/test';
 import { TestDataConfig } from '../../testData.config';
 
 test('Men - Tshirts Products exist', async ({ page }) => {
+  await expect(page.getByRole('link', { name: 'Products' })).toBeVisible();
   await page.getByRole('link', { name: 'Products' }).click();
   await page.locator('a[href="#Men"]').click();
   await page.getByRole('link', { name: 'TSHIRTS' }).click();
@@ -10,6 +11,7 @@ test('Men - Tshirts Products exist', async ({ page }) => {
 });
 
 test('Men - Jeans Products exist', async ({ page }) => {
+  await expect(page.getByRole('link', { name: 'Products' })).toBeVisible();
   await page.getByRole('link', { name: 'Products' }).click();
   await page.locator('a[href="#Men"]').click();
   await page.getByRole('link', { name: 'JEANS' }).click();
