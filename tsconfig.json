@@ -9,5 +9,5 @@
     "types": ["jest", "node"]
     
   },
-  "include": ["tests", "test.config.ts"]
+  "include": ["tests", "testData.config.ts"]
 }

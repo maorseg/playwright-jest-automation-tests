@@ -1,14 +1,14 @@
 import { test } from './setup';
 import { expect } from '@playwright/test';
 import { credentials } from '../../utils/envHelper';
-import { TestConfig } from '../../test.config';
+import { TestDataConfig } from '../../testData.config';
 
 test('Successful Login and Logout', async ({ page }) => {
     await page.getByRole('link', { name: 'Signup / Login' }).click();
     await page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address').fill(credentials.email);
     await page.getByRole('textbox', { name: 'Password' }).fill(credentials.password);
     await page.getByRole('button', { name: 'Login' }).click();
-    await expect(page.getByText(TestConfig.login.successfulLogin)).toBeVisible();
+    await expect(page.getByText(TestDataConfig.login.successfulLogin)).toBeVisible();
     await page.getByRole('link', { name: 'Logout' }).click();
-    await expect(page.getByText(TestConfig.login.Signup)).toBeVisible();
+    await expect(page.getByText(TestDataConfig.login.Signup)).toBeVisible();
 });

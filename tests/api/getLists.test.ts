@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { TestConfig } from '../../test.config';
+import { TestDataConfig } from '../../testData.config';
 
 interface ProductListResponse {
   responseCode: number;
@@ -10,7 +10,7 @@ interface ProductListResponse {
 describe('GET /api', () => {
 
   it('should return responseCode 200 for productsList', async () => {
-    const response: AxiosResponse<ProductListResponse> = await axios.get(TestConfig.api.productsList);
+    const response: AxiosResponse<ProductListResponse> = await axios.get(TestDataConfig.api.productsList);
 
     // Validate HTTP status and custom responseCode
     expect(response.status).toBe(200);
@@ -20,7 +20,7 @@ describe('GET /api', () => {
   });
 
   it('should return responseCode 200 for brandsList', async () => {
-    const response: AxiosResponse<ProductListResponse> = await axios.get(TestConfig.api.brandsList);
+    const response: AxiosResponse<ProductListResponse> = await axios.get(TestDataConfig.api.brandsList);
 
     // Validate HTTP status and custom responseCode
     expect(response.status).toBe(200);

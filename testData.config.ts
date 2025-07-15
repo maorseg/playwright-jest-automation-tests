@@ -1,4 +1,4 @@
-export const TestConfig = {
+export const TestDataConfig = {
   login: {
     successfulLogin: "Logged in",
      Signup: " Signup / Login"
@@ -14,7 +14,8 @@ export const TestConfig = {
     MenTshirtsProducts: "Men - Tshirts Products",
     MenJeansProducts: "Men - Jeans Products",
     kidsDressProducts: "Kids - Dress Products",
-    KidsTopsShirtsProducts: "Kids - Tops & Shirts Products"
+    KidsTopsShirtsProducts: "Kids - Tops & Shirts Products",
+    searchProduct: "Soft Stretch"
   },
   contactUs: {
     name: "testUser",
