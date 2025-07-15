@@ -2,6 +2,7 @@
 import { defineConfig } from '@playwright/test';
 
 module.exports = defineConfig({
+  workers: 4,
   reporter: [['html', { open: 'always' }]], // or 'on' to open automatically
   testDir: './tests', // Directory where your tests are located
   timeout: 50 * 1000, // Timeout per test
@@ -12,7 +13,6 @@ module.exports = defineConfig({
     headless: true, // Run tests in headed mode (optional),
     //launchOptions: {
      // slowMo: 1000, // time in milliseconds between actions (e.g. 1000ms = 1s) for debugging
-     
     //},
   },
 });
