@@ -2,7 +2,7 @@
 import { defineConfig } from '@playwright/test';
 
 module.exports = defineConfig({
-  workers: 4,
+  workers: 1,
   reporter: [['html', { open: 'always' }]], // or 'on' to open automatically
   testDir: './tests', // Directory where your tests are located
   timeout: 50 * 1000, // Timeout per test
