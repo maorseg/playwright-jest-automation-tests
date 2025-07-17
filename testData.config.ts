@@ -19,7 +19,7 @@ export const TestDataConfig = {
     kidsSearchProduct: "Sleeveless Unicorn Patch Gown - Pink",
     womenSearchProduct: "Beautiful Peacock Blue Cotton Linen Saree",
     productInStock: "Availability: In Stock",
-    addToCart: "Your product has been added"
+    addToCart: "Your product has been added to cart."
   },
   contactUs: {
     name: "testUser",
