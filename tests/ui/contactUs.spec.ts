@@ -2,7 +2,7 @@ import { test } from './setup';
 import { expect } from '@playwright/test';
 import { TestDataConfig } from '../../testData.config';
 
-test.skip('test', async ({ page }) => {
+test.skip('Contact us', async ({ page }) => {
   await page.getByRole('link', { name: 'Contact us' }).click();
   await page.getByRole('textbox', { name: 'Name' }).click();
   await page.getByRole('textbox', { name: 'Name' }).fill(TestDataConfig.contactUs.name);

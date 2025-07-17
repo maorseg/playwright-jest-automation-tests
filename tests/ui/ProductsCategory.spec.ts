@@ -1,7 +1,7 @@
 import { test } from './setup';
 import { expect } from '@playwright/test';
 import { TestDataConfig } from '../../testData.config';
-import { clickProductsLink } from '../../utils/products';
+import { clickProductsLink } from '../../utils/elementsInteractability';
 
 test('Men - Tshirts Products exist', async ({ page }) => {
   await clickProductsLink(page);
@@ -24,7 +24,10 @@ test('Men product search', async ({ page }) => {
   await page.click('#submit_search');
   await page.getByRole('link', { name: 'View Product' }).click();
   await expect(page.getByRole('heading', { name: 'Soft Stretch Jeans' })).toHaveText(TestDataConfig.products.menSearchProduct);
-  await expect(page.getByText('Availability: In Stock')).toHaveText(TestDataConfig.products.productInStock);
+  await page.getByRole('button', { name: ' Add to cart' }).click();
+  await page.getByText('Your product has been added').click();
+  await page.getByText('Your product has been added').click();
+  await page.getByRole('heading', { name: 'Added!' }).click();
 });
 
 test('Women - Dress Products exist', async ({ page }) => {

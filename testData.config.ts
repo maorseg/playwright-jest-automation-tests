@@ -18,7 +18,8 @@ export const TestDataConfig = {
     menSearchProduct: "Soft Stretch Jeans",
     kidsSearchProduct: "Sleeveless Unicorn Patch Gown - Pink",
     womenSearchProduct: "Beautiful Peacock Blue Cotton Linen Saree",
-    productInStock: "Availability: In Stock"
+    productInStock: "Availability: In Stock",
+    addToCart: "Your product has been added"
   },
   contactUs: {
     name: "testUser",
