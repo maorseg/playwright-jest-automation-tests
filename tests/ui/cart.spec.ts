@@ -1,6 +1,6 @@
-import { test } from './setup';
+import { test } from '../../utils/setup';
 import { expect } from '@playwright/test';
-import { TestDataConfig } from '../../testData.config';
+import { TestDataConfig } from '../../utils/testDataValidations';
 import { clickCartLink } from '../../utils/elementsInteractability';
 
 test('Add to cart', async ({ page }) => {

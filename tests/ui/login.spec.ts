@@ -1,7 +1,7 @@
-import { test } from './setup';
+import { test } from '../../utils/setup';
 import { expect } from '@playwright/test';
 import { credentials } from '../../utils/envHelper';
-import { TestDataConfig } from '../../testData.config';
+import { TestDataConfig } from '../../utils/testDataValidations';
 
 test('Successful Login and Logout', async ({ page }) => {
     await page.getByRole('link', { name: 'Signup / Login' }).click();

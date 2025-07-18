@@ -9,5 +9,5 @@
     "types": ["jest", "node"]
     
   },
-  "include": ["tests", "testData.config.ts"]
+  "include": ["tests", "utils/testDataValidations.ts", "utils/setup.ts"]
 }

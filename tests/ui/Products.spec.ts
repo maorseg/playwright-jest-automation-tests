@@ -1,7 +1,9 @@
-import { test } from './setup';
+import { test } from '../../utils/setup';
 import { expect } from '@playwright/test';
-import { TestDataConfig } from '../../testData.config';
+import { TestDataConfig } from '../../utils/testDataValidations';
 import { clickProductsLink } from '../../utils/elementsInteractability';
+
+// Category tests
 
 test('Men - Tshirts Products exist', async ({ page }) => {
   await clickProductsLink(page);

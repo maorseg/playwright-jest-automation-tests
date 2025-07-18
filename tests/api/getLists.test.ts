@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import { TestDataConfig } from '../../testData.config';
+import { TestDataConfig } from '../../utils/testDataValidations';
 
 interface ProductListResponse {
   responseCode: number;

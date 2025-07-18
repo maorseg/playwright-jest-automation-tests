@@ -1,6 +1,6 @@
-import { test } from './setup';
+import { test } from '../../utils/setup';
 import { expect } from '@playwright/test';
-import { TestDataConfig } from '../../testData.config';
+import { TestDataConfig } from '../../utils/testDataValidations';
 
 test.skip('Contact us', async ({ page }) => {
   await page.getByRole('link', { name: 'Contact us' }).click();
