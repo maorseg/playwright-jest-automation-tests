@@ -1,11 +1,13 @@
 📸 Playwright-Jest Automation Tests
 
-End-to-end testing framework for both UI and API validations on Automation Exercise, powered by Playwright, Jest, and Axios. Integrated with Jenkins and GitHub Actions for CI/CD and enriched with detailed HTML reporting for clear test insights.
+End-to-end testing framework for both UI and API validations on Automation Exercise sites, powered by Playwright, Jest, and Axios. Integrated with Jenkins and GitHub Actions for CI/CD and enriched with detailed HTML reporting for clear test insights.
 
 🚀 Overview
 
-This project is aimed at automating tests for automationexercise.com and includes:
+This project is aimed at automating tests for 
+- UI Automation vs. https://www.automationexercise.com and includes:
 - Playwright for fast, cross-browser UI automation.
+- API Automation vs. https://restful-api.dev/
 - Jest as the test runner with expressive assertion capabilities.
 - Axios for validating RESTful API endpoints.
 - CI/CD integration via Jenkins and GitHub Actions.

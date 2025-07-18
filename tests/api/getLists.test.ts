@@ -1,32 +1,25 @@
 import axios, { AxiosResponse } from 'axios';
 import { TestDataConfig } from '../../utils/testDataValidations';
 
-interface ProductListResponse {
-  responseCode: number;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  products: any[];
-}
+type APIObject = {
+  id: string;
+  name: string;
+  data?: Record<string, unknown>;
+};
 
-describe('GET /api', () => {
+type ListOfAllObjects = APIObject[];
 
-  it('should return responseCode 200 for productsList', async () => {
-    const response: AxiosResponse<ProductListResponse> = await axios.get(TestDataConfig.api.productsList);
+it('should return responseCode 200 and all object IDs', async () => {
+  const response: AxiosResponse<ListOfAllObjects> = await axios.get(TestDataConfig.api.ListOfAllObjects);
 
-    // Validate HTTP status and custom responseCode
-    expect(response.status).toBe(200);
-    expect(response.data).toHaveProperty('responseCode', 200);
-    expect(response.data).toHaveProperty('products');
-    // console.log(response.data)
-  });
-
-  it('should return responseCode 200 for brandsList', async () => {
-    const response: AxiosResponse<ProductListResponse> = await axios.get(TestDataConfig.api.brandsList);
-
-    // Validate HTTP status and custom responseCode
-    expect(response.status).toBe(200);
-    expect(response.data).toHaveProperty('brands');
-    expect(response.data).toHaveProperty('responseCode', 200);
-    // console.log(response.data)
-  });
+  expect(response.status).toBe(200);
+  expect(Array.isArray(response.data)).toBe(true);
+  expect(response.data.length).toBeGreaterThan(0); // ensures some data exists
   
+  // const allIds = response.data.map(obj => obj.id);
+  // console.log('Returned IDs:', allIds);
+  // console.log(response.data);
 });
+
+
+

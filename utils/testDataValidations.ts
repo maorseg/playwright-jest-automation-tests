@@ -29,7 +29,6 @@ export const TestDataConfig = {
     feedbackSubmitted:"Success! Your details have been submitted successfully."
   },
   api: {
-    productsList:"https://automationexercise.com/api/productsList",
-    brandsList:"https://automationexercise.com/api/brandsList"
+    ListOfAllObjects:"https://api.restful-api.dev/objects",
   },
 }; 
