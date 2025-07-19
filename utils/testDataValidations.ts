@@ -30,5 +30,6 @@ export const TestDataConfig = {
   },
   api: {
     ListOfAllObjects:"https://api.restful-api.dev/objects",
+    ListOfSpecificObject: "https://api.restful-api.dev/objects?id=5"
   },
 }; 
