@@ -31,6 +31,7 @@ export const TestDataConfig = {
   api: {
     ListOfAllObjects:"https://api.restful-api.dev/objects",
     ListOfObjectsByID:"https://api.restful-api.dev/objects?id=3&id=5&id=10",
-    singleObject: "https://api.restful-api.dev/objects?id=5"
+    singleObject: "https://api.restful-api.dev/objects?id=5",
+    addObject: "https://api.restful-api.dev/objects"
   },
 }; 

@@ -38,6 +38,27 @@ it('should return responseCode 200 and a single object with a non-empty id and n
   expect(object.name.trim().length).toBeGreaterThan(0);
 });
 
+  it('should create a new object and return 200 status', async () => {
+    const newObject = {
+      name: "Apple MacBook Pro 16",
+      data: {
+        year: 2019,
+        price: 1849.99,
+        "CPU model": "Intel Core i9",
+        "Hard disk size": "1 TB"
+      }
+    };
+
+    const response = await axios.post(TestDataConfig.api.addObject, newObject);
+
+    expect(response.status).toBe(200);
+    expect(response.data).toHaveProperty('id');
+    expect(response.data.name).toBe(newObject.name);
+    expect(response.data.data).toEqual(newObject.data);
+  });
+
+
+
 
 
 
