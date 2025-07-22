@@ -29,9 +29,9 @@ export const TestDataConfig = {
     feedbackSubmitted:"Success! Your details have been submitted successfully."
   },
   api: {
-    ListOfAllObjects:"https://api.restful-api.dev/objects",
-    ListOfObjectsByID:"https://api.restful-api.dev/objects?id=3&id=5&id=10",
-    singleObject: "https://api.restful-api.dev/objects?id=5",
+    listOfAuthors:"https://fakerestapi.azurewebsites.net/api/v1/Authors",
+    listOfBooksByID:"https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/1",
+    listOfAuthorsByID: "https://fakerestapi.azurewebsites.net/api/v1/Authors/3",
     addObject: "https://api.restful-api.dev/objects"
   },
 }; 
