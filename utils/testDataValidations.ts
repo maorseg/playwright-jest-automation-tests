@@ -1,4 +1,4 @@
-export const TestDataConfig = {
+export const testDataValidations = {
   login: {
     successfulLogin: "Logged in",
      Signup: " Signup / Login"
@@ -31,7 +31,6 @@ export const TestDataConfig = {
   api: {
     listOfAuthors:"https://fakerestapi.azurewebsites.net/api/v1/Authors",
     listOfBooksByID:"https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/1",
-    listOfAuthorsByID: "https://fakerestapi.azurewebsites.net/api/v1/Authors/3",
-    addObject: "https://api.restful-api.dev/objects"
+    AuthorsByID: "https://fakerestapi.azurewebsites.net/api/v1/Authors/3"
   },
 }; 
