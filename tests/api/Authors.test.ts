@@ -27,7 +27,7 @@ it('should return responseCode 200 and ListOfBooksByID', async () => {
 });
 
 it('should return responseCode 200 and ListOfAuthorsByID', async () => {
-  const response: AxiosResponse<ListOfAuthors> = await axios.get(testDataValidations.api.AuthorsByID);
+  const response: AxiosResponse<ListOfAuthors> = await axios.get(testDataValidations.api.authorByID);
   expect(response.status).toBe(200);
 });
 
@@ -51,12 +51,12 @@ it('should return responseCode 200 and ListOfAuthorsByID', async () => {
       lastName: "Doe"
     };
 
-    const response = await axios.put(testDataValidations.api.AuthorsByID,updatedAuthor);
+    const response = await axios.put(testDataValidations.api.authorByID,updatedAuthor);
     expect(response.status).toBe(200);
   });
 
 it('should return responseCode 200 for author delete', async () => {
-  const response: AxiosResponse<ListOfAuthors> = await axios.delete(testDataValidations.api.AuthorsByID);
+  const response: AxiosResponse<ListOfAuthors> = await axios.delete(testDataValidations.api.authorByID);
   expect(response.status).toBe(200);
 });
 

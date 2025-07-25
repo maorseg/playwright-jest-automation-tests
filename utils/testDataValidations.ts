@@ -31,6 +31,8 @@ export const testDataValidations = {
   api: {
     listOfAuthors:"https://fakerestapi.azurewebsites.net/api/v1/Authors",
     listOfBooksByID:"https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/1",
-    AuthorsByID: "https://fakerestapi.azurewebsites.net/api/v1/Authors/3"
+    authorByID: "https://fakerestapi.azurewebsites.net/api/v1/Authors/3",
+    listOfBooks: "https://fakerestapi.azurewebsites.net/api/v1/Books",
+    bookByID: "https://fakerestapi.azurewebsites.net/api/v1/Books/1",
   },
 }; 
