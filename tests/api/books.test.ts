@@ -50,7 +50,6 @@ it('should return status 200 when updating a book', async () => {
   it('should return responseCode 200 and BookByID', async () => {
   const response: AxiosResponse<ListOfBooks> = await axios.get(testDataValidations.api.bookByID);
   expect(response.status).toBe(200);
-  console.log(response.data)
 });
 
 it('should return responseCode 200 for book delete', async () => {
