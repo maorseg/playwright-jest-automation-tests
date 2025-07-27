@@ -9,8 +9,8 @@ test('homepage visual snapshot', async ({ page }) => {
 
   // Assert snapshot and store baseline image
   await expect(image).toHaveScreenshot('product-sale.png', {
-  // threshold: 0.0,            // allow 10% pixel difference
-  // animations: 'disabled',    // skip transition effects
+     threshold: 0.1,            // allow 10% pixel difference
+     animations: 'disabled',    // skip transition effects
   });
 });
 
@@ -19,7 +19,7 @@ test('logo visual snapshot', async ({ page }) => {
   await image.waitFor();
   // Assert snapshot and store baseline image
   await expect(image).toHaveScreenshot('AutomationExerciseLogo.png', {
-  // threshold: 0.0,            // allow 10% pixel difference
-  // animations: 'disabled',    // skip transition effects
+     threshold: 0.1,            // allow 10% pixel difference
+     animations: 'disabled',    // skip transition effects
   });
 });
