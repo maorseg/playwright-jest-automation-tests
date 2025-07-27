@@ -7,7 +7,7 @@
     "api": "jest",
     "apiwithReports": "jest && start ./test-report.html",
     "e2e": "npx playwright test tests/ui",
-    "visual": "npx playwright test tests/visual",
+    "visual": "npx playwright test tests/visual/visualRegression.spec.ts --update-snapshots",
     "lint": "eslint tests/**/*.ts",
     "format": "prettier --write ."
   },
