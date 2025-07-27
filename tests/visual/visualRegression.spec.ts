@@ -13,3 +13,13 @@ test('homepage visual snapshot', async ({ page }) => {
   // animations: 'disabled',    // skip transition effects
   });
 });
+
+test('logo visual snapshot', async ({ page }) => {
+  const image = page.getByRole('heading', { name: 'AutomationExercise' })
+  await image.waitFor();
+  // Assert snapshot and store baseline image
+  await expect(image).toHaveScreenshot('AutomationExerciseLogo.png', {
+  // threshold: 0.0,            // allow 10% pixel difference
+  // animations: 'disabled',    // skip transition effects
+  });
+});
