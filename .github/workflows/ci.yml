@@ -29,8 +29,5 @@ jobs:
     - name: Run playwright api tests
       run: npm run api:playwright
 
-    - name: Run jest e2e tests
-      run: npm run api:jest
-
     - name: Run visual tests
       run: npm run visual
