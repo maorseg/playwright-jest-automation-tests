@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "api": "jest",
-    "apiwithReports": "jest && start ./test-report.html",
-    "e2e": "npx playwright test tests/ui",
-    "visual": "npx playwright test tests/visual/visualRegression.spec.ts",
-    "lint": "eslint tests/**/*.ts",
-    "format": "prettier --write ."
+   "test": "jest",
+   "api:playwright": "playwright test tests/api/*.test.ts",
+   "api:jest": "jest tests/api/*.test.ts",
+   "apiwithReports": "jest && start ./test-report.html",
+   "e2e": "npx playwright test tests/ui",
+   "visual": "npx playwright test tests/visual/visualRegression.spec.ts",
+   "lint": "eslint tests/**/*.ts",
+   "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",

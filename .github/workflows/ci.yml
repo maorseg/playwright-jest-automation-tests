@@ -26,11 +26,11 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install
 
-    - name: Run api Tests
-      run: npm run api
+    - name: Run playwright api tests
+      run: npm run api:playwright
 
-    - name: Run e2e Tests
-      run: npm run e2e
+    - name: Run jest e2e tests
+      run: npm run api:jest
 
-    - name: Run e2e Tests
+    - name: Run visual tests
       run: npm run visual

@@ -5,11 +5,9 @@ End-to-end testing framework for both UI and API validations on Automation Exerc
 🚀 Overview
 
 This project is aimed at automating tests for 
-- UI Automation vs. https://www.automationexercise.com and includes:
-- Playwright for fast, cross-browser UI automation.
+- UI and Visual Regression Automation vs. https://www.automationexercise.com and includes:
+- Playwright for fast, cross-browser UI and Visual automation.
 - API Automation vs. https://fakerestapi.azurewebsites.net/index.html
-- Jest as the test runner with expressive assertion capabilities.
-- Axios for validating RESTful API endpoints.
 - CI/CD integration via Jenkins and GitHub Actions.
 - nHTML Reports for intuitive, readable test results.
 
